@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#666666" >
+
+    <!-- カメラの Preview用のView  -->
+    <!-- Cameraクラスを使用する場合は SurfaceView、Camera2クラスの場合は TextureViewを指定する -->
+    <!--<include layout="@layout/inc_preview" />-->
+    <ImageView
+        android:id="@+id/iv_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_photo"
+        android:layout_width="@dimen/size_circle_medium_button"
+        android:layout_height="@dimen/size_circle_medium_button"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="end"
+        android:src="@mipmap/ic_camera"
+        android:background="@drawable/bg_circle"
+        android:onClick="onClick"/>
+
+</FrameLayout>

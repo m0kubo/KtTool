@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Ktツール</string>
+
+    <string name="title_horizon_meter">水平メーター</string>
+    <string name="lbl_degree_horizon">斜度</string>
+    <string name="lbl_degree_face">撮影面</string>
+    <string name="fmt_degree_horizon"> %.1fﾟ</string>
+    <string name="fmt_degree_face"> %+.0fﾟ</string>
+
+    <string name="action_adjust_scale">定規補正</string>
+    <string name="msg_adjust_scale">定規の目盛りは、端末に設定されているpixelの大きさを基準にしていますが、端末により誤差がある場合があります。</string>
+    <string name="fmt_adjust_scale">%+.1f %%</string>
+
+    <string name="add_widget">Add widget</string>
+
+    <string name="btn_close">閉じる</string>
+
+    <string name="menu_char_set">文字コード：</string>
+    <string name="menu_font_size">文字サイズ：</string>
+
+    <string name="label_font_size_fmt">%.1f sp</string>
+
+    <string name="toast_view_fmt">ファイルを開きます\n%s</string>
+    <string name="toast_no_file_specified">ファイルが指定されていません</string>
+    <string name="msg_photo_complete">撮影完了: </string>
+
+    <string name="msg_missing_sensor">必要なセンサーが搭載されていないため、残念ながらこの機能はご利用いただけません。</string>
+
+</resources>

@@ -1,0 +1,27 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="false"
+    android:scrollbars="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_logs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="4dp"
+        android:scrollbarStyle="outsideOverlay">
+
+        <TextView
+            android:id="@+id/tv_viewer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textIsSelectable="true"
+            android:textSize="18sp" />
+
+    </HorizontalScrollView>
+
+</ScrollView>

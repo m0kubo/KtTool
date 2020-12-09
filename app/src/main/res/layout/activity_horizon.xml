@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#666666" >
+
+    <!-- カメラの Preview用のView  -->
+    <!-- Cameraクラスを使用する場合は SurfaceView、Camera2クラスの場合は TextureViewを指定する -->
+    <include layout="@layout/inc_preview" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_angle"
+                android:layout_gravity="end"
+                android:text="@string/fmt_degree_horizon"
+                android:textColor="#ffffff"
+                android:textSize="45sp"
+                style="@style/CameraText"
+                />
+            <TextView
+                android:id="@+id/tv_face"
+                android:layout_gravity="start|bottom"
+                android:text="@string/fmt_degree_face"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                style="@style/CameraText"
+                />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="#ff00c2"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="start|bottom"
+                android:text="@string/lbl_degree_face"
+                style="@style/CameraText"
+                />
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/lbl_degree_horizon"
+                style="@style/CameraText"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

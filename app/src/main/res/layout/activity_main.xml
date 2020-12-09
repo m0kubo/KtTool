@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.insprout.okubo.kttool.RulerView
+        android:id="@+id/v_ruler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:paddingBottom="12dp" />
+
+    <ImageButton
+        android:id="@+id/btn_flash"
+        android:layout_width="@dimen/size_circle_medium_button"
+        android:layout_height="@dimen/size_circle_medium_button"
+        android:layout_gravity="top|start"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_light"
+        android:background="@drawable/bg_circle"
+        android:onClick="onClick"/>
+    <ImageButton
+        android:id="@+id/btn_viewer"
+        android:layout_width="@dimen/size_circle_medium_button"
+        android:layout_height="@dimen/size_circle_medium_button"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_below="@+id/btn_flash"
+        android:src="@mipmap/ic_description"
+        android:background="@drawable/bg_circle"
+        android:onClick="onClick"/>
+    <ImageButton
+        android:id="@+id/btn_angle"
+        android:layout_width="@dimen/size_circle_medium_button"
+        android:layout_height="@dimen/size_circle_medium_button"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_below="@+id/btn_viewer"
+        android:src="@mipmap/ic_angle"
+        android:background="@drawable/bg_circle"
+        android:onClick="onClick"/>
+    <ImageButton
+        android:id="@+id/btn_camera"
+        android:layout_width="@dimen/size_circle_medium_button"
+        android:layout_height="@dimen/size_circle_medium_button"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_below="@+id/btn_angle"
+        android:src="@mipmap/ic_camera"
+        android:background="@drawable/bg_circle"
+        android:onClick="onClick"/>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 無効時 -->
+    <item android:state_enabled="false"
+          android:drawable="@drawable/bg_circle_disabled" />
+    <!-- 押下時 -->
+    <item android:state_pressed="true"
+          android:drawable="@drawable/bg_circle_on" />
+    <!-- 選択時 -->
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/bg_circle_on" />
+    <!-- 標準状態 -->
+    <item android:drawable="@drawable/bg_circle_off" />
+</selector>

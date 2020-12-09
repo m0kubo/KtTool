@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="ring"
+    android:innerRadius="0dp"
+    android:thickness="@dimen/radius_circle_medium_button"
+    android:useLevel="false" >
+    <solid android:color="@color/btn_neutral" />
+    <size android:height="@dimen/size_circle_medium_button" android:width="@dimen/size_circle_medium_button" />
+</shape>
